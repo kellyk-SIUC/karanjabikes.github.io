@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Karanja's Bicycles contact page
+Use: To display bike shop contact information 
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept 21, 2019
+Tested: Sept 22, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Local bicycle shop contact information">
+        <meta name="keywords" content="contact, contact us">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    	</script>
+        <title>Contact Us</title>
+</head>
+<body class="contact">
+    <header>
+        <img src= "Images/rider.png" alt="Bicycle logo" height="50" width="75">
+        <h1>Karanja's Bicycles</h1>
+        <!-- Navigation list -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>

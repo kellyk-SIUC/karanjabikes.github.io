@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Karanja's Bicycles Sales page
+Use: To display bike shop sales infomation
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: October 13, 2019
+Tested: October 12, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Local bicycle shop Sales">
+        <meta name="keywords" content="Sales">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function()){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    	</script>
+        <title>Sales</title>
+</head>
+<!-- Sales links to other pages -->
+<body class="sales" >
+     <header>
+        <figure>
+        <img id="image1" src="Images/rider.png" alt="Bicycle logo" height="75" width="75">
+        <figcaption>Ride America!</figcaption>
+        </figure> 
+        <h1>Karanja's Bicycles</h1>
+         <!-- Navigation list -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Store current inventory -->
+    <div id="stock">
+    <section id="inventory">
+        <h2 id="season_sale">!!! END OF SEASON SALE !!!</h2>
+        <p><img src="Images/santa_cruz.png" alt="santa cruz" height="150" width="200"><strong>Santa Cruz:</strong> $850</p>
+        <p><img src="Images/specialized.png" alt="specialized" height="150" width="200"><strong>Specialized:</strong> $900</p>
+        <p><img src="Images/bianchi.png" alt="bianchi" height="150" width="200"><strong>Bianchi:</strong> $1000</p>
+        <p><img src="Images/trek.png" alt="trek" height="150" width="200"><strong>Trek: </strong> $1250</p>
+    </section>
+    <!-- Sales section with current deals -->
+    <aside id="bike_sales">
+        <h3>Bike Sales</h3>
+        <p>
+            Our goal is provide our customers with quality bike sales, service and accessories.<br>
+            We carry a revolving bike inventory, so please stop in to see our current selection.<br><br>
+            <em id="lay_away">Lay-away your bike for 90 days with  just a 15% deposit and save BIG!!!.</em><br><br>
+            BIANCHI! SPECIALIZED! TREK! SANTA CRUZ<br><br>
+            <em>Contact us by phone or email</em><br>555-111-2222 <a    href="emailto:Karanjabicycles@karanja.com">karanjasbicycles@karanja.com</a></p>
+        <!-- Video of current inventory and on autoplay on a loop -->
+        <video id="videoplayer" src="Media/bikes.mp4" controls autoplay loop width="300" height="200"></video>
+    </aside>
+    </div>
+<!--Site footer section-->
+    <footer id="footer">
+        <p>&copy; Copyright 2019 Karanja's Bicycles, Northbrook Illinois</p>
+    </footer>
+</body>
+</html>

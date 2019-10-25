@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Karanja's Bicycles Rentals
+Use: To display bike shop services
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept 22, 2019
+Tested: Sept 22, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Local bicycle shop Sales">
+        <meta name="keywords" content="Sales">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    	</script>
+        <title>Services</title>
+</head>
+<body class="services">
+    <header>
+        <figure>
+        <img id="image1" src="Images/rider.png" alt="Bicycle logo" height="75" width="75">
+        <figcaption>Ride America!</figcaption>
+        </figure> 
+        <h1>Karanja's Bicycles</h1>
+        <!-- Navigation list -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Repairs table -->
+    <h2 id="repairs">Repairs</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tire Repair</th>
+                <th>Cable Replacement</th>
+                <th>Repair Bike Chain</th>
+                <th>Parts Replacement</th>
+                <th>Other Miscellaneous Repairs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$25/hr</td>
+                <td>$20/hr</td>
+                <td>$25/hr</td>
+                <td>$50/hr<br> $40/hr Single Speed
+                </td>
+                <td>$25/hr</td>
+            </tr>
+            <tr>
+                <td>Flat fix (includes new tube), install new tire, install tubular/repair tire, install tubeless tire</td>
+                <td>Lubrication of cables (as needed)including new brake/shift cables and housing, new derailleur cables and housing
+                </td>
+                <td>Removal of chain, cassette, derailleurs, and cranks (cleaned in our water-based bio-solvent machine to remove grime)</td>
+                <td>Cleaning, replacing and detailing of frame and parts</td>
+                <td>Wheel services (spoke tune up/install spokes), Hub Services(adjust front and rear hub, hub overhaul (front and back)</td>
+            </tr>
+            <tr>
+                <td>4hr ETA</td>
+                <td>4hr ETA</td>
+                <td>2hr ETA</td>
+                <td>24hr ETA</td>
+                <td>4hr - 24hr ETA</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- End of season tune up -->
+    <h2 id="EOS">End of season tune-ups</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Calibrate Gears</th>
+                <th>Adjust Wheel Hubs</th>
+                <th>Safety Checks</th>
+                <th>Brake Adjustments</th>
+                <th>Clean and Lube</th>
+                <th>Seat and Handle Adjustments</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>$50</td>
+                <td>$50</td>
+                <td>$90</td>
+                <td>$40</td>
+                <td>$30</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>This tune-up special covers all adjustments on bike gears</td>
+                <td>This tune-up special covers all adjustments on bike wheel hubs</td>
+                <td>This safety check tune-up special recommended for bikes that haven't been tuned-up in 2 to 4 years</td>
+                <td>This tune-up special covers all adjustments on bike brakes</td>
+                <td>This clean and lube tune-up special covers all cable systems and chain</td>
+                <td>This tune-up special covers all adjustments to your bike seat and handle bar</td>
+            </tr>
+            <tr>
+                <td>2hr ETA</td>
+                <td>2hr ETA</td>
+                <td>4hr ETA</td>
+                <td>2hr ETA</td>
+                <td>2hr ETA</td>
+                <td>1hr ETA</td>
+            </tr>
+            </tbody>
+    </table>
+<!--Site footer section-->
+    <footer id="footer">
+        <p>&copy; Copyright 2019 Karanja's Bicycles, Northbrook Illinois</p>
+    </footer>
+</body>
+</html>

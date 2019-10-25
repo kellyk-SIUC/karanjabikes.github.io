@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Karanja's Bicycles Rentals
+Use: To display bicycle shop rentals 
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept 14, 2019
+Tested: Sept 15, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <meta charset="utf-8">
+        <meta name="Description" content="Local bicycle shop Sales">
+        <meta name="keywords" content="Sales">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    	</script>
+        <title>Sales</title>
+</head>
+<!-- Sales links to other pages -->
+<body class="sales" >
+     <header>
+        <figure>
+        <img id="image1" src="Images/rider.png" alt="Bicycle logo" height="75" width="75">
+        <figcaption>Ride America!</figcaption>
+        </figure> 
+        <h1>Karanja's Bicycles</h1>
+         <!-- Navigation list -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Bike shop rentals -->
+    <div id="rentals">
+        <div id="road">
+            <p><img src="Images/santa_cruz.png" alt="road_bike" height="150" width="200"><strong>Road Bike:</strong><br>
+            Daily rate - $15 per day <br>
+            Weekly rate - $10 per day</p>
+        </div>
+        <div id="mountain">
+            <p><img src="Images/bianchi.png" alt="mountain_bike" height="150" width="200"><strong>Mountain Bike:</strong><br>
+            Daily rate - $15 per day <br>
+            Weekly rate - $10 per day</p>
+        </div>
+        <div id="leisuire">
+            <p><img src="Images/trek.png" alt="Leisure" height="150" width="200"><strong>Leisure Bike:</strong><br>
+            Daily rate - $15 per day <br>
+            Weekly rate - $10 per day</p>
+        </div>
+    </div>
+    <!-- Accesories section-->
+    <h2 id="accessories">Accessories</h2>
+    <ul>
+        <li>Adult Bike Helmet: $5 per day</li>
+        <li>Child Bike Helmet: $5 per day</li>
+        <li>Child Bike seat: $7 per day</li>
+    </ul>
+        
+<!--Site footer section-->
+    <footer id="footer">
+        <p>&copy; Copyright 2019 Karanja's Bicycles, Northbrook Illinois</p>
+    </footer>
+</body>
+</html>

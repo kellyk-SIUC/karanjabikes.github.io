@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Karanja's Bicycles
+Use: To display bicycle shop catalog 
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept 14, 2019
+Tested: Sept 15, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+        <title>Karanja's Bicycles</title>
+        <meta charset="utf-8">
+        <meta name="Description" content="Local bicycle shop catalog">
+        <meta name="keywords" content="bike shop, bicyles">
+        <link rel="shortcut icon" href="Images/favicon.ico">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+    	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    	<script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	$(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+    	});
+    	</script>
+    
+</head>
+<!--Short description of the bike shop-->
+<body>
+    <header>
+        <figure>
+        <img id="image1" src="Images/rider.png" alt="Bicycle logo" height="75" width="75">
+        <figcaption>Ride America!</figcaption>
+        </figure> 
+        <h1>Karanja's Bicycles</h1>
+        <!-- Navigation list -->
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="rentals.htm">Rentals</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+            </ul>
+        </nav>  
+    </header>
+    
+ <!--List of In-Store Catalog of bicycles-->
+    <main>
+    <aside class="about">
+        <h1>Who are we?</h1>
+        <p class="first">The best bike shop in the Chicagoland area.  We have a great selection of bicycles and our expert staff are always available to take care of all your cycling needs.</p>
+    </aside>
+    <section class="main">
+        <h1>In-Store Catalog</h1>
+        <nav id="bikes">
+            <ul>
+                <li>Specialized</li>
+                <li>Trek</li>
+                <li>Santa Cruz</li>
+                <li>Biachi</li>
+                <li>Sun Bicycles</li>
+            </ul>
+        </nav>
+ <!--Link to bicycle shop about us section-->
+        <p id="about us">To learn more about our shop, visit <a href="https://salukinet.siu.edu/">About Us</a>
+        </p>
+        
+        <p #contact_us><em>Contact us by phone or email</em> at 555-111-2222 or <a    href="emailto:Karanjabicycles@karanja.com">karanjasbicycles@karanja.com</a></p>
+        <audio id="audioplayer" src="Media/Banjo_Short.mp3" controls autoplay loop></audio>
+        
+    </section>
+    </main>  
+    
+ <!--Site footer section-->
+    <footer id="footer">
+        <p>&copy; Copyright 2019 Karanja's Bicycles, Northbrook Illinois</p>
+    </footer>
+</body>
+</html>

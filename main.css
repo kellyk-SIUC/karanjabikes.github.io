@@ -1,0 +1,368 @@
+/* *****************************************************************************
+Title: Main CSS
+Use: So HTML5 semantic elements can be formatted correctly 
+Author: Kelly Karanja
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept 14, 2019
+Tested: Sept 15, 2019; Passed on Firefox and Chrome browsers.
+*/
+
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+/* the styles for the elements */
+html{
+    background-image: -moz-linear-gradient(top, whitesmoke 0% #facd8a 100%);
+    background-image: -webkit-linear-gradient(top, whitesmoke 0% #facd8a 100%);
+    background-image: -o-linear-gradient(top, whitesmoke 0% #facd8a 100%);
+    background-image: linear-gradient(top, whitesmoke 0% #facd8a 100%);
+}
+/* the styles for the body that is centered and bordered */
+.street, .mountain{
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 87.5%;
+    width: 90%;
+    max-width: 1024px;
+    background-color: ghostwhite;
+    margin: 10px auto;
+}
+
+/*class styles for heading elements */
+.rentals h2{
+    text-align: center;
+}
+h1, h2,{             
+    padding: 10px;}/* sets heading padding to 10 pixels*/
+
+h1 {font-size: 250%;}
+
+.street h1{font-size: 100%;}
+.mountain h1{  font-size: 100%;}
+
+h2 {font-size: 150%;}
+
+/* Navigation bar styles */
+#nav_menu ul{
+    display: flex;
+    flex-basis: 100px;
+    justify-content: space-around;
+    list-style: none;
+    padding: .5em 2em 0 0;
+    text-align: end;    
+}
+#nav_menu ul,li{
+    flex-basis: 20%;
+}
+#nav_menu a{
+    font-size: 1.10em;
+    font-weight: bold;
+    color: navy;
+}
+
+a {color: navy; font-weight: bold;}
+a:link {color: navy;}
+a:hover, a:focus {color: orange;}
+a:active {color: orange;}
+
+ul {  margin: 0 0 1.5em;}
+
+li {padding-left: 10px;}
+
+p { 
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.025em;
+    padding: 0 5px;
+}
+
+/* the styles for header */
+header { 
+    padding-bottom: .35em;
+    border-bottom: 2px solid #ef9c00;
+}
+#image1 {
+    background-image: url(Images/rider.png);
+    width: 65px;
+    height: 65px;
+    float: left;
+    position: static;     
+}
+#image1:hover {
+    background-image: url(Images/child_bike_helmet.jpg);
+}
+figure {
+    float: left;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    color: navy;
+    padding-top: .25em;
+    margin-bottom: 1em;
+}
+header h1{
+    color: navy;
+    text-align: center;
+    text-shadow: 2px 3px 0 orange;
+    margin-bottom: .25em;
+}
+
+header p{
+    font-family: "Times New Roman", Times, serif;
+    padding-top: 10px;
+    clear: left;
+}
+
+/* styles for main section */
+main {display: flex;}
+.main {
+    flex-basis: 80%;
+    height: auto;
+    width: auto;
+    padding-left: 10px;
+}
+.main h1 {
+    font-size: 200%; 
+    color: navy; 
+    text-shadow: 2px 2px 2px orange;
+    margin: 1em 0 .35em;
+}
+.about {
+    flex-basis: 20%;
+    max-height: 200px;
+    min-height: 180px;
+    width: 300px;
+    float: left;
+    padding-right: 5px;
+    background-color: blanchedalmond;
+    margin: 1em 0 .35em; 
+}
+.about h1{
+    margin: 0;
+    font-size: 150%;
+    color: navy;
+    text-align: center;
+}
+.about p{
+    font-family: "Times New Roman", serif;
+    padding-top: 5px;
+}
+/* set width to percents for a fluid design */
+/* rentals page styles */
+.rentals {width: 99%;}
+.street {
+    width: 50%;
+    padding-right: 1px;
+    float: left;
+}
+.street img{
+	display:block;
+	width:100%;
+    max-width: 200px;
+	height:auto;
+}
+}
+.mountain {
+    width: 50%;
+    float: right;
+    padding-left: 10px;
+}
+.mountain img{
+	display:block;
+	width:100%;
+    max-width: 200px;
+	height:auto;	
+}
+em {
+    font-weight: bold;
+    color: black;
+}
+
+/* styles for rwd */
+#for_rent {
+    flex-basis: 80%;
+    height: auto;
+    width: auto;
+    padding-left: 1px;
+}
+#row {
+    float: left;
+    width: 66.6%;
+    padding: 5px;
+}
+#row img{
+    vertical-align: bottom;
+}
+#row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*styles for sales page */
+.sales {width: 99%}
+div {display: flex;}
+#inventory {
+    flex-basis: 80%;
+    height: auto;
+    width: auto;
+    padding-left: 1px;
+}
+#inventory img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#inventory h2 {
+    font-size: 200%; 
+    color: red; 
+    margin: 1em 0 .35em;
+}
+#bike_sales {
+    flex-basis: 20%;
+    max-height: 400px;
+    min-height: 180px;
+    width: 300px;
+    float: left;
+    padding-right: 5px;
+    background-color: lightgray;
+    margin: 6em 0 .35em; 
+}
+#bike_sales h3{
+    margin: 0;
+    font-size: 150%;
+    color: navy;
+    text-align: center;
+}
+#bike_sales p{
+    font-family: "Times New Roman", serif;
+    font-size: 1.25em;
+    padding-top: 5px;
+}
+#lay_away {
+    color: red;
+}
+/* styles for services page */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: normal;    
+}
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right;
+}
+#repairs {text-align: end;}
+#EOS {text-align: end;}
+thead {background-color: lightgray}
+/* styles for footer */
+footer {
+    clear: both;
+    margin-top: 2em;
+    border-top: 2px solid #ef9c00;
+    padding-top: .7em;
+}
+footer p{
+    font-size: 80%;
+    text-align: right;
+}
+/* hide the mobile menu initially*/
+#mobile_menu {display: none;}
+
+/* tablet potrait to standard 960 */
+@media only screen and (max-width: 959px){
+    #nav_menu u1 li a {font-size: .75em !important;
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px){
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    body{
+        width: 100%;  /* full width */
+        margin: 0;    /* no margins */
+        border: none; /* no border */
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header, footer p {text-align: center;}
+    footer p {margin-right: 0;}
+    header h1 {
+        font-size: 1.625em;  /* 26/16 */
+        margin: .4em 0 .25em 0;
+    }
+    header img {
+        float: none;
+        flex-basis: 25%;
+    }
+    main {flex-direction: column;}
+    .main {order: 2;}
+    .about {order: 1;}  
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px){
+    #nav_menu {display: none;}
+    #mobile_menu {display: block;}
+    body{
+        width: 100%;  /* full width */
+        margin: auto;    /* no margins */
+        border: none; /* no border */
+    }
+    header h1 { 
+        font-size: 1.375em;
+    }    /* 22/16 */
+    p {font-size: .875em;}              /* 14/16 */
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: .1em;
+        }
+    header img {
+        float: left;}
+    #nav_menu ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;
+        margin: 0;
+        padding: .5em;  
+    }
+
+    #nav_menu ul li {
+        width: 20%; /* 5 menu items  1/5 = 20%*/
+        align-items:center;   
+    }
+
+    #nav_menu ul li a.current {
+        text-decoration: underline;    
+    }
+
+    #nav_menu ul li a {
+        text-align: center;
+        display: block;
+        padding: 1em;
+        text-decoration: none;
+        font-size: 1em;
+        font-weight: bold; 
+    }
+    aside h1{
+        font-size: 1em;}                /* base font size */
+    #accessories li { font-size: .875em;}      /* 14/16 */
+    th, td {display: block;}
+    thead {display: none;}
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 110%;
+        background-color: lightgray;
+    }
+    tbody td {border-bottom-style: none;}
+    footer p {font-size: .6875em;}
+}
+
