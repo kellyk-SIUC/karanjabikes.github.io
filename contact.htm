@@ -5,8 +5,8 @@ Title: Karanja's Bicycles contact page
 Use: To display bike shop contact information 
 Author: Kelly Karanja
 School/Term: Southern Illinois University, Fall 2019
-Developed: Sept 21, 2019
-Tested: Sept 22, 2019; Passed on Firefox and Chrome browsers.
+Developed: Oct 26, 2019
+Tested: Oct 26, 2019; Passed on Firefox and Chrome browsers.
 ******************************************************************************
 -->
 <html lang="en-US">
@@ -28,7 +28,10 @@ Tested: Sept 22, 2019; Passed on Firefox and Chrome browsers.
 </head>
 <body class="contact">
     <header>
-        <img src= "Images/rider.png" alt="Bicycle logo" height="50" width="75">
+        <figure>
+        <img id="image1" src="Images/rider.png" alt="Bicycle logo" height="75" width="75">
+        <figcaption>Ride America!</figcaption>
+        </figure> 
         <h1>Karanja's Bicycles</h1>
         <!-- Navigation list -->
         <nav id="mobile_menu"></nav>
@@ -40,8 +43,91 @@ Tested: Sept 22, 2019; Passed on Firefox and Chrome browsers.
                 <li><a href="rentals.htm">Rentals</a></li>
                 <li><a href="contact.htm">Contact Us</a></li>
             </ul>
-        </nav>
+        </nav>  
     </header>
-
+    <!-- HTML for form -->
+    <form action="response.htm" method="post" id="contact_form">
+        <fieldset> <!--Customer information fields -->
+            <legend>Customer Inquiry</legend> <!--Fieldset label-->
+            <label for="fullname">Full Name: </label>
+            <input type="text" name="fullname" id="fullname" autofocus required placeholder="Enter full name" minlength="15" maxlength="15"><br>
+            <label for="address">Address: </label>
+            <input type="text" name="address" id="address" required placeholder="Enter address" min="15" maxlength="50"><br>
+            <label for="city">City: </label>
+            <input type="text" name="city" id="city" required placeholder="Enter city name" min="4" maxlength="25"><br>
+            <label for="state">State: </label>
+            <select name="state" id="state" required> <!--State drop down list-->
+                <option value="Illinois">Illinois</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Michigan">Michigan</option>
+            </select><br>
+            <label for="Zip">Zip Code: </label>
+            <input type="text" name="Zip" id="Zip" required placeholder="5 or 10 digits" pattern="^\d{5}(-\d{4})?$" title="99999-9999" min="5" maxlength="10"><br> <!--Validates Zip Code entry-->
+            <label for="Phone">Phone: </label>
+            <input type="tel" name="Phone" id="Phone" required placeholder="999-999-9999" pattern="^\d{3}[\-] \d{3}[\-] \d{4})?$" title="Must be 999-999-9999" min="10" maxlength="12"><br> <!--Validates Phone entry-->
+            <label for="email">E-Mail: </label>
+            <input type="email" name="email" id="fullname" required placeholder="Your Email Address" min="10" maxlength="25"><br>
+            <label for="date">Submission Date: </label>
+            <input type="date" name="fullname" id="fullname" required><br>       
+            <label for="inquiry" >Inquiry Type: </label>
+            <div id="check_box">
+                <div>
+                    <span>
+                        <input type="checkbox" name="Inquiry1" value="Sales">Sales
+                    </span>
+                    </div>
+                <div>
+                    <span>
+                        <input type="checkbox" name="Inquiry2" value="Rentals">Rentals
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="checkbox" name="Inquiry3" value="Service">Service
+                    </span>
+                </div>
+            </div>
+            <label for="Bicycle Type">Bicycle Type: </label>
+            <div id="radio_buttons">
+                <div>
+                    <span>
+                        <input type="radio" name="Bike1" value="Trek">Trek
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="radio" name="Bike2" value="Santa Cruz">Santa Cruz
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <input type="radio" name="Bike3" value="Bianchi">Bianchi
+                    </span>
+                </div>
+                <div>
+                <div>
+                    <span>
+                        <input type="radio" name="Bike4" value="Specialized">Specialized
+                    </span>
+                </div>
+            </div>
+            <label for="password">Create Password: </label>
+	        <input type="password" name="password" id="password" required placeholder="At least 6 letters or numbers" pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters"><br> <!--Validates password entry-->
+            <label for="message">Message: </label>
+            <textarea id="message" required placeholder="Enter comments here" minlength="20" maxlength="200"></textarea>
+        </fieldset>
+        <!--Submit form buttons-->
+        <fieldset id="buttons"> 
+            <legend>Submit Inquiry</legend>
+            <label>&nbsp;</label>
+            <input type="submit" id="submit" value="Submit">
+            <input type="reset" id="reset" value="Reset">
+        </fieldset>
+    </form>
+    <!--Site footer section-->
+    <footer id="footer">
+        <p>&copy; Copyright 2019 Karanja's Bicycles, Northbrook Illinois</p>
+    </footer>
 </body>
 </html>

@@ -257,6 +257,74 @@ th, td {
 #repairs {text-align: end;}
 #EOS {text-align: end;}
 thead {background-color: lightgray}
+
+/*styles for contact page */
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    background-color: azure;
+}
+label, input, select {
+    font-size: 90%
+}
+label {
+    display: block;
+    float: left;
+    color: navy;
+    width: 15em;
+    padding: 2px;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+#check_box #radio_buttons div {
+    display: block;
+    float: left;
+    vertical-align: middle;
+    text-align: right;
+    padding: 0 0 1px 1px;
+    clear: both;
+}
+#check_box #radio_buttons span {
+    display: block;
+    padding-left: 1px;
+}
+input, select, textarea{
+    width: 15em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+input:required, input[required] {
+    border: 1px solid orange;
+}
+input:valid {
+    border: 1px solid black;
+}
+input:invalid {
+    box-shadow: none;
+}
+input:focus {
+    border: 2px solid navy;
+}
+br {
+    clear: both;
+}
+#submit #reset {
+    width: 12em;
+    box-shadow: 2px 2px 0 navy;
+    background-color: silver;
+}
+textarea {
+    height: 5em;
+    width: 25em;
+    font-family: sans-serif;
+}
+#buttons {
+    margin-left: 12em;
+}
+
 /* styles for footer */
 footer {
     clear: both;
@@ -363,6 +431,10 @@ footer p{
         background-color: lightgray;
     }
     tbody td {border-bottom-style: none;}
+    label, input, select {display: block;}
+    #check_box #radio_buttons {display: flex;}
+    #submit #reset {display: flex;}
+    textarea {display: block;}
     footer p {font-size: .6875em;}
 }
 
